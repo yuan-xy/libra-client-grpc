@@ -39,14 +39,14 @@ if not 'sha3_256' in hashlib.algorithms_available:
     install_requires.append("pysha3")
 
 setuptools.setup(
-    name="libra-client",
+    name="libra-client-grpc",
     version=version,
     author="yuan xinyu",
     author_email="yuanxinyu.hangzhou@gmail.com",
     description="A CLI inteface Libra client and Python API for Libra blockchain.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yuan-xy/libra-client.git",
+    url="https://github.com/yuan-xy/libra-client-grpc.git",
     packages=setuptools.find_packages(),
     include_package_data=True,
     entry_points={
