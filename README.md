@@ -1,7 +1,8 @@
 # LibraClient  [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
-Because Libra was changed its protocol from grpc to json-rpc [see](https://community.libra.org/t/blog-new-json-rpc-libra-client-api/2819). This is an archived version of LibraClient talking grcp protocol to work with Libra version `bb728128263ba54e311bf38cf1e573792e652096`. Run following commands to start a libra swarm:
+Because Libra was changed its protocol from grpc to json-rpc, [see here](https://community.libra.org/t/blog-new-json-rpc-libra-client-api/2819). This is an archived version of LibraClient talking grpc protocol with Libra project, tested with libra version `bb728128263ba54e311bf38cf1e573792e652096`. 
 
+Run following commands to start a libra swarm:
 
 ```sh
 $ git clone https://github.com/libra/libra.git
@@ -17,7 +18,8 @@ $ head tmp1/0/node.config.toml | grep address
 
 Then, you can use libra-client-grpc to talk with libra-swarm:
 ```
-libra -a localhost -p your_port ledger time
+$ python3 -m pip install libra-client-grpc
+$ libra -a localhost -p your_port ledger time
 ```
 
 
